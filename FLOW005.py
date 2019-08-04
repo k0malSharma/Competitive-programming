@@ -1,0 +1,23 @@
+for _ in range(int(input())):
+    n=int(input())
+    flag=0
+    while(n>0):
+        if(n>=100):
+            n-=100
+            flag+=1
+        elif(n>=50):
+            n-=50
+            flag+=1
+        elif(n>=10):
+            n-=10
+            flag+=1
+        elif(n>=5):
+            n-=5
+            flag+=1
+        elif(n>=2):
+            n-=2
+            flag+=1
+        else:
+            n-=1
+            flag+=1
+    print(flag)
